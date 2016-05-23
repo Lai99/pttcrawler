@@ -47,3 +47,5 @@ Temporary Items
 .apdisk
 ask.html
 *.html
+*.pyc
+pttcrawler/spiders/a.bat
