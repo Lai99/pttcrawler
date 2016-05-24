@@ -33,10 +33,6 @@ class PttSpider(scrapy.Spider):
                 logging.warning('you cannot pass')
 
         else:
-            # filename = response.url.split('/')[-2] + '.html'
-            # with open(filename, 'wb') as f:
-            #     f.write(response.body)
-
             self._pages += 1
             for href in response.css('.r-ent > div.title > a::attr(href)'):
                 url = response.urljoin(href.extract())
